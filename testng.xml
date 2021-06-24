@@ -4,13 +4,13 @@
 
 <suite name="All Test Suite">
     <listeners>
-        <listener class-name="Common.Utilities.Listeners.TestListener" />
+        <listener class-name="Common.Utilities.Listeners.TestListener"/>
     </listeners>
     <test verbose="2" preserve-order="true" name="Railway test">
 
         <parameter name="browser" value="chrome"/>
         <classes>
-            <class name="Testcases.Railway.LoginTest.TestCase01" />
+            <class name="Testcases.Railway.LoginTest.TestCase01"/>
         </classes>
 
     </test>

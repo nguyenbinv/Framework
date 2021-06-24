@@ -20,7 +20,7 @@ public class BaseTest {
 
     @BeforeTest
     public void startReport() {
-        extent = new ExtentReports(System.getProperty("user.dir") + "/ExtentReports/RailwayReport.html", true);
+        extent = new ExtentReports(System.getProperty("user.dir") + "/ExtentReports/ExtentReport.html", true);
         extent
                 .addSystemInfo("Environment", "Automation Testing")
                 .addSystemInfo("User Name", "Huy Nguyen");
@@ -43,8 +43,8 @@ public class BaseTest {
         } else {
             throw new Exception("Browser is not correct");
         }
-//        Dimension d = new Dimension(1300, 1400);
-//        Constant.WEBDRIVER.manage().window().setSize(d);
+        Dimension d = new Dimension(1300, 1400);
+        Constant.WEBDRIVER.manage().window().setSize(d);
         Constant.WEBDRIVER.manage().window().maximize();
     }
 
